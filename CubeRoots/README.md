@@ -7,7 +7,7 @@ Write a program that computes the solutions of a cubic equation.
 _Remember in Middle School when your teacher showed you something like this and you had no clue how to solve for its roots_: **y = x^3 - 7x^2 + 13x - 2**
 
 Well, now you have a program that can do it for you!
-This program uses [Cardano's Formula](https://proofwiki.org/wiki/Cardano’s_Formula) to solve for roots of a cubic.
+This program uses [Cardano's Formula](https://proofwiki.org/wiki/Cardano%27s_Formula) to solve for roots of a cubic.
 
 ### Modules
 Included are two modules:
