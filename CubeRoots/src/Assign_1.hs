@@ -1,4 +1,4 @@
-{- Assignment 1
+{- 
  - Name: Benjamin Kostiuk
  - Date: 9/24/2018
  -}

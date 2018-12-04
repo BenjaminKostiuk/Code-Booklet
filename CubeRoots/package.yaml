@@ -1,10 +1,10 @@
-name:                1JC3-Assign1
+name:                Cube-Roots
 version:             0.1.0.0
 github:              "githubuser/1JC3-Assign1"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2018 Author name here"
+author:              "Benjamin Kostiuk"
+maintainer:          "benkostiuk1@gmail.com"
+copyright:           "2018 Benjamin Kostiuk"
 
 extra-source-files:
 - README.md
