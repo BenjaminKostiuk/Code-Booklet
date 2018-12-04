@@ -1,0 +1,78 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-23 01:09:42.6077553 UTC
+
+interface main@main:Main 8002
+  interface hash: fac98cc23f52da8550fcafebe06f062e
+  ABI hash: 0700bde4bb3d5ea515c8eb4f7f3e052f
+  export-list hash: 29c8a3d90b647a76487c58aeca4460af
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 546af2f91f59b7ab7ca66c424d558ec0
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: 1JC3-Assign3-0.1.0.0@1JC3-Assign3-0.1.0.0-EuZjAisOsWwAS3BuVKIX1H
+                      base-4.9.1.0* ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  1JC3-Assign3-0.1.0.0@1JC3-Assign3-0.1.0.0-EuZjAisOsWwAS3BuVKIX1H:Assign_3 0c147fbe669d054d96a6915ea9b50ad5
+import  -/  1JC3-Assign3-0.1.0.0@1JC3-Assign3-0.1.0.0-EuZjAisOsWwAS3BuVKIX1H:Assign_3_ExtraCredit 94308d9c86604109ed7ef3bb598b14be
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+9754c23f4818532697a015b007cd6952
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+4a50279f03546a4c7cbadc3dd7cfcd54
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   eta) -}
+8330b6c43bf19aa031b0d4f150467079
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Executable for 1JC3-Assign2 successfully run"#) -}
+e0c26df6ba980edd3807a5ecff442ac1
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

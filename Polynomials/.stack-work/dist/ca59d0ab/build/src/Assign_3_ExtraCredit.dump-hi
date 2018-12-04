@@ -1,0 +1,293 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-23 01:09:41.1151046 UTC
+
+interface 1JC3-Assign3-0.1.0.0-EuZjAisOsWwAS3BuVKIX1H:Assign_3_ExtraCredit 8002
+  interface hash: 6d18915137c29091f72f288848a64756
+  ABI hash: 94308d9c86604109ed7ef3bb598b14be
+  export-list hash: a5c90866b4941196e47479db3345c9b3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0191c04348c6dfa857340b6e1b4116aa
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Assign_3_ExtraCredit.altPoly1
+  Assign_3_ExtraCredit.altPoly2
+  Assign_3_ExtraCredit.macid
+  Assign_3_ExtraCredit.polyAltDegree
+  Assign_3_ExtraCredit.polyAltDeriv
+  Assign_3_ExtraCredit.polyAltNewton
+  Assign_3_ExtraCredit.polyAltProd
+  Assign_3_ExtraCredit.polyAltToPoly
+  Assign_3_ExtraCredit.polyAltValue
+  Assign_3_ExtraCredit.polyToPolyAlt
+  Assign_3_ExtraCredit.PolyAlt{Assign_3_ExtraCredit.Monomial Assign_3_ExtraCredit.SumAlt}
+module dependencies: Assign_3
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  Assign_3 0c147fbe669d054d96a6915ea9b50ad5
+  exports: 8bfaf9740ac9e6de1d0be4482ce48ede
+  Coef 1e155faa99a6913376b7f5ceabc33568
+  Poly 1cd946f86d8e91c6ef82ff655dfd2e5f
+  Prod f078a40dac1623f85abdefd54bc719d1
+  Sum ab8b5e4397d2c36e950208b65e6cc65b
+  X 47448cb1e50669f7fba7b024c3c24256
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
+dae3926fc2464f4af89f350f01c675b9
+  $fShowPolyAlt ::
+    GHC.Show.Show a => GHC.Show.Show (Assign_3_ExtraCredit.PolyAlt a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (Assign_3_ExtraCredit.PolyAlt a)
+                  (Assign_3_ExtraCredit.$fShowPolyAlt_$cshowsPrec @ a $dShow)
+                  (Assign_3_ExtraCredit.$fShowPolyAlt_$cshow @ a $dShow)
+                  (Assign_3_ExtraCredit.$fShowPolyAlt_$cshowList @ a $dShow) -}
+d03aea448a3f3e8af83217049890037f
+  $fShowPolyAlt1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+dae3926fc2464f4af89f350f01c675b9
+  $fShowPolyAlt_$cshow ::
+    GHC.Show.Show a =>
+    Assign_3_ExtraCredit.PolyAlt a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: Assign_3_ExtraCredit.PolyAlt a) ->
+                 Assign_3_ExtraCredit.$fShowPolyAlt_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+dae3926fc2464f4af89f350f01c675b9
+  $fShowPolyAlt_$cshowList ::
+    GHC.Show.Show a =>
+    [Assign_3_ExtraCredit.PolyAlt a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [Assign_3_ExtraCredit.PolyAlt a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Assign_3_ExtraCredit.PolyAlt a)
+                   (Assign_3_ExtraCredit.$fShowPolyAlt_$cshowsPrec
+                      @ a
+                      $dShow
+                      Assign_3_ExtraCredit.$fShowPolyAlt1)
+                   eta
+                   eta1) -}
+dae3926fc2464f4af89f350f01c675b9
+  $fShowPolyAlt_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> Assign_3_ExtraCredit.PolyAlt a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S(S),1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Assign_3_ExtraCredit.PolyAlt a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 Assign_3_ExtraCredit.$w$cshowsPrec @ a w ww1 w2 }) -}
+9b15e3c81066bfdf2647b18346f8e81a
+  $tc'Monomial :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7652838682056718835##
+                   15700603461213293805##
+                   Assign_3_ExtraCredit.$trModule
+                   Assign_3_ExtraCredit.$tc'Monomial1) -}
+acef1776d54ecdcf8d1ade62f1be80ae
+  $tc'Monomial1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Monomial"#) -}
+28b7f9a30dc0f812906f9cad98f06aaf
+  $tc'SumAlt :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13267825032964920813##
+                   15025465919880074847##
+                   Assign_3_ExtraCredit.$trModule
+                   Assign_3_ExtraCredit.$tc'SumAlt1) -}
+3e53d3ad77ea9af154d144f901165d34
+  $tc'SumAlt1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'SumAlt"#) -}
+413b7a571e0be58c81fb7074442a785f
+  $tcPolyAlt :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11217416092148805829##
+                   13406634163893706361##
+                   Assign_3_ExtraCredit.$trModule
+                   Assign_3_ExtraCredit.$tcPolyAlt1) -}
+ec0eafcfaea493eb278756687ea50bdd
+  $tcPolyAlt1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "PolyAlt"#) -}
+4ffd4ebc0e5c3e83430e350b432c976b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Assign_3_ExtraCredit.$trModule2
+                   Assign_3_ExtraCredit.$trModule1) -}
+7de6cbcb54c828baa7286b0c6a17ed4e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Assign_3_ExtraCredit"#) -}
+8f0f74cfce19e3144f3f54d5f785a0a9
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "1JC3-Assign3-0.1.0.0-EuZjAisOsWwAS3BuVKIX1H"#) -}
+dae3926fc2464f4af89f350f01c675b9
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int# -> Assign_3_ExtraCredit.PolyAlt a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,U><S,1*U>,
+     Inline: [0] -}
+a9d4a6aa42b088310c7ce1b80a2a3aa6
+  $wpolyAltDegree ::
+    Assign_3_ExtraCredit.PolyAlt a -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+01f47c137b462966230e74ad15fa447b
+  $wpolyAltToPoly ::
+    Assign_3_ExtraCredit.PolyAlt a -> Assign_3.Poly a
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+f0ee5e9ea18caf25ed4bd7face106d9d
+  $wpolyToPolyAlt ::
+    GHC.Num.Num a => Assign_3.Poly a -> Assign_3_ExtraCredit.PolyAlt a
+  {- Arity: 2, Strictness: <L,U(A,A,C(C1(U)),A,A,A,C(U))><S,1*U>,
+     Inline: [0] -}
+dae3926fc2464f4af89f350f01c675b9
+  data PolyAlt a
+    = Monomial a GHC.Integer.Type.Integer
+    | SumAlt (Assign_3_ExtraCredit.PolyAlt a)
+             (Assign_3_ExtraCredit.PolyAlt a)
+ee5f985fb0276beba17bfa2f5e40fcb7
+  altPoly1 :: Assign_3_ExtraCredit.PolyAlt GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Assign_3_ExtraCredit.Monomial
+                   @ GHC.Integer.Type.Integer
+                   Assign_3_ExtraCredit.altPoly5
+                   Assign_3_ExtraCredit.altPoly4) -}
+8b22b74f9e4247a3e447bf3679f231e1
+  altPoly2 :: Assign_3_ExtraCredit.PolyAlt GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Assign_3_ExtraCredit.SumAlt
+                   @ GHC.Integer.Type.Integer
+                   Assign_3_ExtraCredit.altPoly8
+                   Assign_3_ExtraCredit.altPoly6) -}
+2da4f2a76219a87e49bd7d88d665e7f0
+  altPoly4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+3a6161bf0acf993881410e113f44b8b0
+  altPoly5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+b2e5d7687b1eaeb69c9282530829d173
+  altPoly6 :: Assign_3_ExtraCredit.PolyAlt GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Assign_3_ExtraCredit.Monomial
+                   @ GHC.Integer.Type.Integer
+                   Assign_3_ExtraCredit.altPoly7
+                   Assign_3_ExtraCredit.altPoly5) -}
+10b90750a09b4e4a48f8d6a670e8e3b8
+  altPoly7 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+35508ff2256eb6e8e48923ad34852b9f
+  altPoly8 :: Assign_3_ExtraCredit.PolyAlt GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Assign_3_ExtraCredit.Monomial
+                   @ GHC.Integer.Type.Integer
+                   Assign_3_ExtraCredit.altPoly4
+                   Assign_3_ExtraCredit.altPoly9) -}
+9ad74146549549458a1e46f0f823d13c
+  altPoly9 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (-2) -}
+98b616634719ca5b0645f4c24adeea47
+  macid :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "kostiukb"#) -}
+f2e77c8a25f57e67915e8ecc0c448806
+  polyAltDegree ::
+    (GHC.Num.Num a, GHC.Classes.Eq a) =>
+    Assign_3_ExtraCredit.PolyAlt a -> GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <L,A><L,A><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (w1 :: GHC.Classes.Eq a)
+                   (w2 :: Assign_3_ExtraCredit.PolyAlt a) ->
+                 Assign_3_ExtraCredit.$wpolyAltDegree @ a w2) -}
+65fb6762a47f0ab889be78f2a7186424
+  polyAltDeriv ::
+    GHC.Num.Num a =>
+    Assign_3_ExtraCredit.PolyAlt a -> Assign_3_ExtraCredit.PolyAlt a
+  {- Arity: 2, Strictness: <L,U(A,A,C(C1(U)),A,A,A,C(U))><S,1*U> -}
+350826f8ada00b9bd2b3f38aa29b7098
+  polyAltNewton ::
+    (GHC.Real.Fractional a, GHC.Classes.Ord a) =>
+    Assign_3_ExtraCredit.PolyAlt a -> a -> a -> a
+  {- Arity: 5,
+     Strictness: <L,U(U,C(C1(U)),A,A)><S(LLC(C(S))LLLLL),U(A,A,C(C1(U)),A,A,A,A,A)><L,U><L,U><L,U> -}
+600061e66aa96b81aa93ded6853f8e8f
+  polyAltProd ::
+    GHC.Num.Num a =>
+    Assign_3_ExtraCredit.PolyAlt a
+    -> Assign_3_ExtraCredit.PolyAlt a -> Assign_3_ExtraCredit.PolyAlt a
+  {- Arity: 3, Strictness: <L,U(A,A,C(C1(U)),A,A,A,A)><S,U><S,U> -}
+c5c083cd2711860006d5a839ff71442b
+  polyAltToPoly ::
+    (GHC.Num.Num a, GHC.Classes.Eq a) =>
+    Assign_3_ExtraCredit.PolyAlt a -> Assign_3.Poly a
+  {- Arity: 3, Strictness: <L,A><L,A><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (w1 :: GHC.Classes.Eq a)
+                   (w2 :: Assign_3_ExtraCredit.PolyAlt a) ->
+                 Assign_3_ExtraCredit.$wpolyAltToPoly @ a w2) -}
+397326470defa7ebd416418d0658fd17
+  polyAltValue ::
+    GHC.Num.Num a => Assign_3_ExtraCredit.PolyAlt a -> a -> a
+  {- Arity: 3,
+     Strictness: <S,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))><S,1*U><L,U> -}
+be438e0c848c946e7c136fcbebb8372b
+  polyToPolyAlt ::
+    (GHC.Num.Num a, GHC.Classes.Eq a) =>
+    Assign_3.Poly a -> Assign_3_ExtraCredit.PolyAlt a
+  {- Arity: 3,
+     Strictness: <L,U(A,A,C(C1(U)),A,A,A,C(U))><L,A><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (w1 :: GHC.Classes.Eq a)
+                   (w2 :: Assign_3.Poly a) ->
+                 Assign_3_ExtraCredit.$wpolyToPolyAlt @ a w w2) -}
+instance [safe] GHC.Show.Show [Assign_3_ExtraCredit.PolyAlt]
+  = Assign_3_ExtraCredit.$fShowPolyAlt
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
