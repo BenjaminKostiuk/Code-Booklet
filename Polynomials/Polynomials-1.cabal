@@ -2,16 +2,16 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4aedb225a1943ab22454a56b03612fdf3d563ca67f80a8462dc9296eb7563743
+-- hash: c9d9d6f36f72c650b3b0dccdb7460d8bf4fdaa570bf5abc96a6dcb2932495a79
 
-name:           1JC3-Assign3
+name:           Polynomials-1
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/1JC3-Assign3#readme>
 homepage:       https://github.com/githubuser/1JC3-Assign3#readme
 bug-reports:    https://github.com/githubuser/1JC3-Assign3/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2018 Author name here
+author:         Benjamin Kostiuk
+maintainer:     benkostiuk1@gmail.com
+copyright:      2018 Benjamin Kostiuk
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -29,7 +29,7 @@ library
       Assign_3
       Assign_3_ExtraCredit
   other-modules:
-      Paths_1JC3_Assign3
+      Paths_Polynomials_1
   hs-source-dirs:
       src
   build-depends:
@@ -43,7 +43,7 @@ library
 executable 1JC3-Assign3-exe
   main-is: Main.hs
   other-modules:
-      Paths_1JC3_Assign3
+      Paths_Polynomials_1
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
@@ -60,7 +60,7 @@ test-suite 1JC3-Assign3-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_1JC3_Assign3
+      Paths_Polynomials_1
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N

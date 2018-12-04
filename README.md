@@ -1,6 +1,7 @@
 # Code-Booklet
 
 Collection of modules built for ~~assignments for the CS-1JCS course~~ having fun and learning Haskell.
+
 Modules include:
 * _Cubic Roots_: Finding the cubic roots of polynomials
 * _Polynomials_: Representing snd working with polynomials

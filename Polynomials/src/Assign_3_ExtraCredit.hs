@@ -1,4 +1,4 @@
-{- Assignment 3 Extra Credit
+{-
  - Name: Benjamin Kostiuk
  - Date: 10/31/2018
  -}
