@@ -8,7 +8,8 @@ the members of the type including symbolic differentiation.
 _What do you call a ring theorist's parrot when it hasn't been fed?_
 _Polynomial!_ (Poly-"no meal")
 
-Polynomials can be defined as: _a<sub>0</sub> + a<sub>1</sub> * x<sup>2</sup> + ... + a<sub>m</sub> * x<sup>m</sup>
+Polynomials can be defined as: _a<sub>0</sub> + a<sub>1</sub> * x<sup>2</sup> + ... + a<sub>m</sub> * x<sup>m</sup>_.
+
 But sometimes its easier with your own data type! To that end this module implements it's own definition and definitions to work over polynomials.
 
 ### Modules
