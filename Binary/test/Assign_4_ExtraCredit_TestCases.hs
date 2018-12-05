@@ -1,0 +1,230 @@
+             
+{- -----------------------------------------------------------------
+ - Test Cases
+ - -----------------------------------------------------------------
+ - 
+ - - -----------------------------------------------------------------
+ - - Function: natPrint
+ - - Test Case Number: 101
+ - - Input: Z
+ - - Expected Output: "Nat:0"
+ - - Acutal Output: "Nat:0"
+ - - -----------------------------------------------------------------
+ - - Function: natPrint
+ - - Test Case Number: 102
+ - - Input: (S Z)
+ - - Expected Output: "Nat:S0"
+ - - Acutal Output: "Nat:S0"
+ - - -----------------------------------------------------------------
+ - - Function: natPrint
+ - - Test Case Number: 103
+ - - Input: (S (S (S (S (S Z)))))
+ - - Expected Output: "Nat:SSSSS0"
+ - - Acutal Output: "Nat:SSSSS0"
+ - - -----------------------------------------------------------------
+ - - -----------------------------------------------------------------
+ - - Function: binNatPrint
+ - - Test Case Number: 104
+ - - Input: (Atom Zero)
+ - - Expected Output: "BinNat:0"
+ - - Acutal Output: "BinNat:0"
+ - - -----------------------------------------------------------------
+ - - Function: binNatPrint
+ - - Test Case Number: 105
+ - - Input: (Atom One)
+ - - Expected Output: "BinNat:1"
+ - - Acutal Output: "BinNat:1"
+ - - -----------------------------------------------------------------
+ - - Function: binNatPrint
+ - - Test Case Number: 106
+ - - Input: (Compound (Atom One) Zero)
+ - - Expected Output: "BinNat:10"
+ - - Acutal Output: "BinNat:10"
+ - - -----------------------------------------------------------------
+ - - Function: binNatPrint
+ - - Test Case Number: 107
+ - - Input: (Compound (Atom One) One)
+ - - Expected Output: "BinNat:11"
+ - - Acutal Output: "BinNat:11"
+ - - -----------------------------------------------------------------
+ - - Function: binNatPrint 
+ - - Test Case Number: 108
+ - - Input: (Compound (Atom Zero) One)
+ - - Expected Output: "BinNat:01"
+ - - Acutal Output: "BinNat:01"
+ - - -----------------------------------------------------------------
+ - - -----------------------------------------------------------------
+ - - Function: natParse
+ - - Test Case Number: 109
+ - - Input: "Nat:0"
+ - - Expected Output: Nat:0
+ - - Acutal Output: Nat:0
+ - - -----------------------------------------------------------------
+ - - Function: natParse
+ - - Test Case Number: 110
+ - - Input: "Nat:SS0"
+ - - Expected Output: Nat:SS0
+ - - Acutal Output: Nat:SS0
+ - - -----------------------------------------------------------------
+ - - -----------------------------------------------------------------
+ - - Function: binNatParse
+ - - Test Case Number: 111
+ - - Input: "BinNat:0"
+ - - Expected Output: BinNat:0
+ - - Acutal Output: BinNat:0
+ - - -----------------------------------------------------------------
+ - - Function: binNatParse
+ - - Test Case Number: 112
+ - - Input: "BinNat:1"
+ - - Expected Output: BinNat:1
+ - - Acutal Output: BinNat:1
+ - - -----------------------------------------------------------------
+ - - Function: binNatParse
+ - - Test Case Number: 113
+ - - Input: "BinNat:10"
+ - - Expected Output: BinNat:10
+ - - Acutal Output: BinNat:10
+ - - -----------------------------------------------------------------
+ - - -----------------------------------------------------------------
+ - - Function: plus
+ - - Test Case Number: 114
+ - - Input: Z Z
+ - - Expected Output: Nat:0
+ - - Acutal Output: Nat:0
+ - - -----------------------------------------------------------------
+ - - Function: plus
+ - - Test Case Number: 115
+ - - Input: (S Z) Z
+ - - Expected Output: Nat:S0
+ - - Acutal Output: Nat:S0
+ - - -----------------------------------------------------------------
+ - - Function: plus
+ - - Test Case Number: 116
+ - - Input: (S (S Z)) (S (S (S Z)))
+ - - Expected Output: Nat:SSSSS0
+ - - Acutal Output: Nat:SSSSS0
+ - - -----------------------------------------------------------------
+ - - -----------------------------------------------------------------
+ - - Function: time
+ - - Test Case Number: 117
+ - - Input: Z Z
+ - - Expected Output: Nat:0
+ - - Acutal Output: Nat:0
+ - - -----------------------------------------------------------------
+ - - Function: time
+ - - Test Case Number: 118
+ - - Input: (S Z) Z
+ - - Expected Output: Nat:0
+ - - Acutal Output: Nat:0
+ - - -----------------------------------------------------------------
+ - - Function: time
+ - - Test Case Number: 119
+ - - Input: (S Z) (S (S (S Z)))
+ - - Expected Output: Nat:SSS0
+ - - Acutal Output: Nat:SSS0
+ - - -----------------------------------------------------------------
+ - - Function: time
+ - - Test Case Number: 120
+ - - Input: (S (S (S Z))) (S (S (S Z)))
+ - - Expected Output: Nat:SSSSSSSSS0
+ - - Acutal Output: Nat:SSSSSSSSS0
+ - - -----------------------------------------------------------------
+ - - -----------------------------------------------------------------
+ - - Function: binPlus
+ - - Test Case Number: 121
+ - - Input: (Atom Zero) (Atom Zero)
+ - - Expected Output: BinNat:0
+ - - Acutal Output: BinNat:0
+ - - -----------------------------------------------------------------
+ - - Function: binPlus
+ - - Test Case Number: 122
+ - - Input: (Atom Zero) (Atom One)
+ - - Expected Output: BinNat:1
+ - - Acutal Output: BinNat:1
+ - - -----------------------------------------------------------------
+ - - Function: binPlus
+ - - Test Case Number: 123
+ - - Input: (Atom One) (Atom One)
+ - - Expected Output: BinNat:10
+ - - Acutal Output: BinNat:10
+ - - -----------------------------------------------------------------
+ - - Function: binPlus
+ - - Test Case Number: 124
+ - - Input: (Compound (Atom One) One) (Atom One)
+ - - Expected Output: BinNat:100
+ - - Acutal Output: BinNat:100
+ - - -----------------------------------------------------------------
+ - - Function: binPlus 
+ - - Test Case Number: 125
+ - - Input: (Compound (Atom One) Zero) (Atom One)
+ - - Expected Output: BinNat:11
+ - - Acutal Output: BinNat:11
+ - - -----------------------------------------------------------------
+ - - Function: binPlus
+ - - Test Case Number: 126
+ - - Input: (Compound (Atom One) Zero) (Compound (Atom One) Zero)
+ - - Expected Output: BinNat:100
+ - - Acutal Output: BinNat:100
+ - - -----------------------------------------------------------------
+ - - Function: binPlus
+ - - Test Case Number: 127
+ - - Input: (Compound (Atom One) One) (Compound (Compound (Atom One) One) One)
+ - - Expected Output: BinNat:1010
+ - - Acutal Output: BinNat:1010
+ - - -----------------------------------------------------------------
+ - - -----------------------------------------------------------------
+ - - Function: binTimes
+ - - Test Case Number: 128
+ - - Input: (Atom Zero) (Atom Zero)
+ - - Expected Output: BinNat:0
+ - - Acutal Output: BinNat:0
+ - - -----------------------------------------------------------------
+ - - Function: binTimes
+ - - Test Case Number: 129
+ - - Input: (Atom Zero) (Atom One)
+ - - Expected Output: BinNat:0
+ - - Acutal Output: BinNat:0
+ - - -----------------------------------------------------------------
+ - - Function: binTimes
+ - - Test Case Number: 130
+ - - Input: (Atom One) (Atom One)
+ - - Expected Output: BinNat:1
+ - - Acutal Output: BinNat:1
+ - - -----------------------------------------------------------------
+ - - Function: binTimes
+ - - Test Case Number: 131
+ - - Input: (Atom One) (Compound (Atom One) Zero)
+ - - Expected Output: BinNat:10
+ - - Acutal Output: BinNat:10
+ - - -----------------------------------------------------------------
+ - - Function: binTimes
+ - - Test Case Number: 132
+ - - Input: (Compound (Atom One) Zero) (Compound (Atom One) Zero)
+ - - Expected Output: BinNat:100
+ - - Acutal Output: BinNat:100
+ - - -----------------------------------------------------------------
+ - - Function: binTimes
+ - - Test Case Number: 133
+ - - Input: (Compound (Atom One) One) (Compound (Atom One) Zero)
+ - - Expected Output: BinNat:110
+ - - Acutal Output: BinNat:110
+ - - -----------------------------------------------------------------
+ - - Function: binTimes
+ - - Test Case Number: 134
+ - - Input: (Compound (Atom One) One) (Compound (Atom One) One)
+ - - Expected Output: BinNat:1001
+ - - Acutal Output: BinNat:1001
+ - - -----------------------------------------------------------------
+ - - Function: binTimes
+ - - Test Case Number: 135
+ - - Input: (Compound (Compound (Atom One) Zero) One) (Compound (Atom One) One)
+ - - Expected Output: BinNat:1111
+ - - Acutal Output: BinNat:1111
+ - - -----------------------------------------------------------------
+    QuicCheck Case
+ - - -----------------------------------------------------------------
+    See Assign_4_Test.hs for quickCheck function tests.
+ - - -----------------------------------------------------------------
+ End of Test Cases
+ -}
+ 
