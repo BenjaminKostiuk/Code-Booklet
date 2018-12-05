@@ -5,7 +5,7 @@ Collection of modules built for ~~assignments for the CS-1JCS course~~ having fu
 Modules include:
 * _Binary_ : Working with unary and binary numbers
 * _Cubic Roots_: Finding the cubic roots of polynomials
-* _Polynomials_: Representing snd working with polynomials
+* _Polynomials_: Representing and working with polynomials
 * _Vectors_: Working with vector spaces
 
 ## Getting Started
