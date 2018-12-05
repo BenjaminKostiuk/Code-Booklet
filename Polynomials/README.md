@@ -10,7 +10,7 @@ _Polynomial!_ (Poly-"no meal")
 
 Polynomials can be defined as: _a<sub>0</sub> + a<sub>1</sub> * x<sup>1</sup> + a<sub>2</sub> * x<sup>2</sup> + ... + a<sub>m</sub> * x<sup>m</sup>_.
 
-But sometimes its easier with your own data type! To that end this module implements it's own definition and definitions to work over polynomials.
+But sometimes it's easier with your own data type! To that end this module implements it's own definition and definitions to work over polynomials.
 
 ### Modules
 Included are two modules:
@@ -26,4 +26,4 @@ Functions over polynomials included are:
 
 ### Testing
 Included in the /test folder are tests on various input and output.
-Also included is a QuickCheck module for Assign_3
+Also included is a QuickCheck module for Assign_3.
