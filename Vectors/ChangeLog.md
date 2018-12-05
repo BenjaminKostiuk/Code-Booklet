@@ -1,3 +1,3 @@
-# Changelog for 1JC3-Assign1
+# Changelog for Vectors
 
 ## Unreleased changes
