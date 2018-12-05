@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c9d9d6f36f72c650b3b0dccdb7460d8bf4fdaa570bf5abc96a6dcb2932495a79
+-- hash: 905153eb1b32fa29195325de894ed41122b008fd519e6804c4184c37d4c8704a
 
 name:           Polynomials-1
 version:        0.1.0.0
@@ -60,6 +60,9 @@ test-suite 1JC3-Assign3-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Assign_3_ExtraCredit_TestCases
+      Assign_3_QuickCheck
+      Assign_3_TestCases
       Paths_Polynomials_1
   hs-source-dirs:
       test
