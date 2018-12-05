@@ -25,4 +25,5 @@ Functions over polynomials included are:
 * Conversion between types
 
 ### Testing
-Included at the end of the file are test cases on various input and output of the program. 
+Included in the /test folder are tests on various input and output.
+Also included is a QuickCheck module for Assign_3
