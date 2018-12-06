@@ -1,0 +1,80 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: b776e6027b24a294b30a5516438e9eb80ac762ca0e8c1500fb624e38c7f7b550
+
+name:           Integrals
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/1JC3-Assign5#readme>
+homepage:       https://github.com/githubuser/1JC3-Assign5#readme
+bug-reports:    https://github.com/githubuser/1JC3-Assign5/issues
+author:         Author name here
+maintainer:     benkostiuk1@gmail.com
+copyright:      2018 Benjamin Kostiuk
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/1JC3-Assign5
+
+library
+  exposed-modules:
+      Assign_5
+  other-modules:
+      Paths_1JC3_Assign5
+  hs-source-dirs:
+      src
+  build-depends:
+      QuickCheck
+    , base >=4.7 && <5
+    , containers
+    , criterion
+    , ghc-mod
+    , hoogle
+    , stylish-haskell
+  default-language: Haskell2010
+
+executable 1JC3-Assign5-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_1JC3_Assign5
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      1JC3-Assign5
+    , QuickCheck
+    , base >=4.7 && <5
+    , containers
+    , criterion
+    , ghc-mod
+    , hoogle
+    , stylish-haskell
+  default-language: Haskell2010
+
+test-suite 1JC3-Assign5-test
+  type: exitcode-stdio-1.0
+  main-is: Assign_5_Test.hs
+  other-modules:
+      Assign_5_TestCases
+      Paths_1JC3_Assign5
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      1JC3-Assign5
+    , QuickCheck
+    , base >=4.7 && <5
+    , containers
+    , criterion
+    , ghc-mod
+    , hoogle
+    , stylish-haskell
+  default-language: Haskell2010
