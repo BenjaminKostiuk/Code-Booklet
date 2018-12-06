@@ -16,4 +16,4 @@ Included is the Assign_4_ExtraCredit that deals with unary and binary representa
 
 ### Testing
 Included in the /test folder are tests on various input and output.
-Also included is a QuickCheck module for Assign_4_ExtraCredit.
+Also included is are quickCheck properties for Assign_4_ExtraCredit.
