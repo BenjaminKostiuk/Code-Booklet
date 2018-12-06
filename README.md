@@ -19,5 +19,8 @@ Modules include:
 - To load GHCi run *stack ghci fileName.hs*
 
 ### Testing
+Testing performed using Haskell's [QuickCheck module](http://hackage.haskell.org/package/QuickCheck).
 
 ### Built With
+* Stack
+* Cabal
