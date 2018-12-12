@@ -14,10 +14,10 @@ Modules include:
 ### Installation
 
 - Install the Haskell Platform from <https://www.haskell.org/platform/>
-- *cd* into directory
-- Run *stack setup*
-- Run *stack build*
-- To load GHCi run *stack ghci fileName.hs*
+- ```cd``` into directory
+- Run ```stack setup```
+- Run ```stack build```
+- To load GHCi run ```stack ghci fileName.hs```
 
 ### Testing
 Testing performed using Haskell's [QuickCheck module](http://hackage.haskell.org/package/QuickCheck).
