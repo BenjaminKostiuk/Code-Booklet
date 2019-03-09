@@ -1,4 +1,4 @@
-# Code-Booklet
+# Haskell-Slide-Rule
 
 Collection of modules built for ~~assignments for the CS-1JCS course~~ having fun and learning Haskell.
 
