@@ -27,4 +27,4 @@ Testing performed using Haskell's [QuickCheck module](http://hackage.haskell.org
 * Cabal
 
 ### License
-See [LICENSE](License).
+See [License](LICENSE).
