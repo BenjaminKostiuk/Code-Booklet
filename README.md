@@ -25,3 +25,6 @@ Testing performed using Haskell's [QuickCheck module](http://hackage.haskell.org
 ### Built With
 * Stack
 * Cabal
+
+### License
+See [LICENSE](License).
